@@ -4,6 +4,7 @@ defmodule BlogPhoenix.Post do
   schema "posts" do
     field :title, :string
     field :body, :string
+    belongs_to :user, BlogPhoenix.User
 
     timestamps()
   end
